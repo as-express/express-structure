@@ -1,6 +1,6 @@
 # Flexibility Structured ExpressJs App
 
-app show expressJs production and flexibility server structure of building high-load and supporting app using SOLID principes
+App showcasing Express.js for production and a flexible server structure, designed for building high-load and maintainable applications, adhering to SOLID principles.
 
 ## Environment Variables
 

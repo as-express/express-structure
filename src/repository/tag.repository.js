@@ -40,7 +40,6 @@ class TagRepository {
 
     async unPushPost(tags, postId) {
         try {
-            await Promise.all(
                 tags.map(async (i) => {
                     const tag = await this.TagModel.findByIdAndUpdate(i, {
                         $inc: { postCount: -1 },
@@ -49,7 +48,7 @@ class TagRepository {
 
                     await tag.save()
                 })
-            )
+        
             return true
         } catch (err) {
             this.handleError(err)
